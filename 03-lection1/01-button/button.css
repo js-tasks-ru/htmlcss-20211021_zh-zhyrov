@@ -10,6 +10,7 @@
   font-weight: 500;
   font-style: normal;
   line-height: 19px;
+  transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
 .button:active {
@@ -24,38 +25,37 @@
 
 .button:disabled {
   opacity: 0.5;
-  cursor: not-allowed;
   pointer-events: none;
 }
 
-.primary {
+.button_primary {
   background-color: var( --blue-1 );
   color: var( --white );
 }
 
-.primary:hover {
+.button_primary:hover {
   background-color: var( --blue-2 );
 }
 
-.secondary {
+.button_secondary {
   background-color: var( --purple-1 );
   color: var( --white );
 }
 
-.secondary:hover {
+.button_secondary:hover {
   background-color: var( --purple-2 );
 }
 
-.alternate {
+.button_alternate {
   background-color: var( --white );
   color: var( --black );
   border: 1px solid var( --grey-3 );
 }
 
-.alternate:hover {
+.button_alternate:hover {
   border: 1px solid var( --black );
 }
 
-.alternate:disabled {
+.button_alternate:disabled {
   border: 1px solid var( --grey-3 );
 }
