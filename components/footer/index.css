@@ -1,0 +1,17 @@
+.footer {
+  min-height: 20rem;
+  padding: 72px 0;
+  background-color: var(--white);
+  text-align: center;
+}
+
+.footer--title {
+  font-weight: normal;
+} 
+
+.footer--decription {
+  width: 50%;
+  margin: 0 auto;
+  /* text-align: center; */
+  line-height: 24px;
+}
