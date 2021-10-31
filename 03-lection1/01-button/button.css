@@ -2,7 +2,7 @@
   min-width: 189px;
   width: 100%;
   min-height: 48px;
-  padding: 15px 0;
+  padding: 15px 56px;
   border: none;
   border-radius: 8px;
   word-wrap: break-word;
@@ -11,16 +11,12 @@
   font-style: normal;
   line-height: 19px;
   transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+  cursor: pointer;
 }
 
 .button:active {
-  transform: scale(0.985);
   transition: ease-in;
   transition-duration: 100ms;
-}
-
-.button:hover {
-  cursor: pointer;
 }
 
 .button:disabled {
