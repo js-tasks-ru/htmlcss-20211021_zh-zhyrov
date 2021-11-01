@@ -1,12 +1,7 @@
-* {
-  box-sizing: border-box;
-}
-
 .skeleton {
   display: flex;
   flex-direction: column;
-  width: 579px;
-  min-height: 192px;
+  width: 100%;
   border: 1px solid var( --grey-3 );
   border-radius: 8px;
   padding: 24px 40px 32px 24px;
@@ -19,14 +14,14 @@
 .skeleton__bottom-container {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  justify-content:flex-end;
+  justify-content: flex-end;
 }
 
 .skeleton__rows {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-grow: 1;
 }
 
 .skeleton__round {
@@ -48,11 +43,11 @@
 }
 
 .skeleton__row_1 {
-  width: 172px;
+  width: 40%;
 }
 
 .skeleton__row_2 {
-  width: 257px;
+  width: 60%;
 }
 
 .skeleton__row_3 {
