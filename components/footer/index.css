@@ -1,0 +1,16 @@
+.footer {
+  min-height: 20rem;
+  padding: 72px 0;
+  background-color: var(--white);
+  text-align: center;
+}
+
+.footer__title {
+  font-weight: normal;
+} 
+
+.footer__decription {
+  width: 50%;
+  margin: 0 auto;
+  line-height: 24px;
+}
