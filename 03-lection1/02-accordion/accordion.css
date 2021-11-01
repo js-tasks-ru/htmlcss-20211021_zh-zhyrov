@@ -1,1 +1,83 @@
-/* Стилизация аккордеона */
+.accordion {
+  min-width: 730px;
+}
+
+.accordion__item {
+  min-height: 72px;
+  width: 100%;
+  border: 1px solid var( --grey-3 );
+  border-radius: 8px;
+  padding: 24px 32px;
+  margin-bottom: 8px;
+}
+
+.accordion__item:last-child {
+  margin-bottom: 0;
+}
+
+/* Arrow animation */
+.accordion__item[open] > .accordion__summary::after {
+transform: rotate(0deg);
+transition-duration: 0.5s;
+}
+.accordion__item:not([open]) > .accordion__summary::after {
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+
+/* Smooth accordion opening animation */
+@keyframes slideDown {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+.accordion__item[open] > .accordion__description {
+  animation-name: slideDown;
+  animation-duration: 200ms;
+  animation-timing-function: ease;
+  overflow:hidden;
+}
+
+.accordion__summary {
+  position: relative;
+  display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+  color: var( --black );
+  list-style: none; /* another way to hide default marker for summary */
+}
+
+.accordion__summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion__summary::after {
+  content: '';
+  position: absolute;
+  top: 25%;
+  right: 0;
+  width: 18px;
+  height: 12px;
+  background-image: url( ./arrow.svg );
+  background-repeat: no-repeat;
+  transition: ease;
+}
+
+.accordion__description {
+  margin: 0;
+  margin-top: 16px;
+  margin-right: 49px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var( --grey-4 );
+}
