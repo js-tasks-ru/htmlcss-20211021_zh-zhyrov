@@ -1,8 +1,8 @@
 .footer {
-  min-height: 20rem;
   padding: 72px 0;
   background-color: var(--white);
   text-align: center;
+  grid-area: footer;
 }
 
 .footer__title {

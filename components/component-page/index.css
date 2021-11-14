@@ -1,0 +1,30 @@
+.component-page {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  row-gap: 56px;
+  grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+  background-color: var(--grey-1);
+}
+
+.component-page__header {
+  height: 82px;
+  grid-area: header;
+  background-color: var(--white);
+}
+
+.component-page__main {
+  width: 100%;
+  display: grid;
+  grid-area: main;
+  grid-template-columns: auto 1fr;
+  column-gap: 56px;
+}
+
+.component-page__footer {
+  text-transform: uppercase;
+  color: var(--grey-3);
+}
