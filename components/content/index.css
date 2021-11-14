@@ -1,6 +1,7 @@
 .content {
   background-color: var(--grey-1);
   padding: 68px 0 204px;
+}
 
 .content__cards {
   --gap: 30px;
