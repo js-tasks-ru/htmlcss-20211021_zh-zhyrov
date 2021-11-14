@@ -4,9 +4,24 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./modal.css">
+        <link rel="stylesheet" href="../../03-lection1/01-button/button.css">
         <title>Modal</title>
+        <script src="./index.js" defer></script> 
     </head>
     <body>
+        <button class="button button_primary" id="modal-open">
+            Open modal
+        </button>
+        <div id="modal">
+            <div class="modal__body">
+                <button id="modal-close">
+                    <img src="./closeIcon.svg" alt="close modal button">
+                </button>
+                <div class="modal__content">
+                    <h2 class="modal__title">Modal title</h2>
+                    <p class="modal__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis eius exercitationem doloremque, tempora aut dolore voluptatem magnam molestiae sunt cupiditate.</p>
+                </div>
+            </div>
+        </div>
     </body>
-    <script src="./index.js"></script> 
 </html>
